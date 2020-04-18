@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+	<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+		<ImageView
+			android:layout_marginTop="30px"
+			android:layout_width="wrap_content"
+			android:layout_height="150px"
+			android:id="@+id/imageView"
+			android:src="@drawable/music"/>
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_height="wrap_content"
+			android:textSize="20dp"
+			android:textColor="#000"
+			android:layout_width="wrap_content"
+			android:ellipsize="marquee"
+			android:layout_weight="1"
+			android:layout_gravity="center"
+			android:marqueeRepeatLimit="marquee_forever"/>
+
+				<TextView
+			android:id="@+id/author"
+			android:textSize="12dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ImageButton
+			android:id="@+id/prev"
+			android:layout_width="80px"
+			android:layout_height="80px"
+			android:background="@drawable/prev"/>
+
+		<ImageButton
+            android:id="@+id/play"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:background="@drawable/play"/>
+
+		<ImageButton
+			android:id="@+id/next"
+			android:layout_width="80px"
+			android:layout_height="80px"
+			android:background="@drawable/next"/>
+
+		<ImageButton
+        android:id="@+id/stop"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:src="@drawable/stop"/>
+	</LinearLayout>
+
+</LinearLayout>
